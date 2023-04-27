@@ -26,20 +26,20 @@ public class Task2 {
     public static void run(int a, int b, int c) {
         int descr = discriminant(a, b, c);
         if (descr == 0) {
-            isZero(a, b, c);
+            isZero(a, b);
         } else if (descr > 0) {
-            isPositive(a, b, c, descr);
+            isPositive(a, b, descr);
         } else {
             System.out.println("нет корней");
         }
     }
 
-    public static void isPositive(int a, int b, int c, int descr) {
+    public static void isPositive(int a, int b, int descr) {
         System.out.println((-b + sqrt(descr)) / 2 * a);
         System.out.println((-b - sqrt(descr)) / 2 * a);
     }
 
-    public static void isZero(int a, int b, int c) {
+    public static void isZero(int a, int b) {
         System.out.println((-b + sqrt(0)) / 2 * a);
     }
 
