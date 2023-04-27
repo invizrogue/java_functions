@@ -20,6 +20,7 @@ import static java.lang.Math.sqrt;
 public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите значения аргументов a, b и c:");
         run(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
     }
 
@@ -35,12 +36,12 @@ public class Task2 {
     }
 
     public static void isPositive(int a, int b, int descr) {
-        System.out.println((-b + sqrt(descr)) / (2 * a));
-        System.out.println((-b - sqrt(descr)) / (2 * a));
+        System.out.println("x1: " + ((-b + sqrt(descr)) / (2 * a)));
+        System.out.println("x2: " + ((-b - sqrt(descr)) / (2 * a)));
     }
 
     public static void isZero(int a, int b) {
-        System.out.println((-b + sqrt(0)) / (2 * a));
+        System.out.println("x: " + ((-b + sqrt(0)) / (2 * a)));
     }
 
     public static int discriminant(int a, int b, int c) {
