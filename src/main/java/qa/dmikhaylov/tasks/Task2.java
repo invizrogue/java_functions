@@ -35,12 +35,12 @@ public class Task2 {
     }
 
     public static void isPositive(int a, int b, int descr) {
-        System.out.println((-b + sqrt(descr)) / 2 * a);
-        System.out.println((-b - sqrt(descr)) / 2 * a);
+        System.out.println((-b + sqrt(descr)) / (2 * a));
+        System.out.println((-b - sqrt(descr)) / (2 * a));
     }
 
     public static void isZero(int a, int b) {
-        System.out.println((-b + sqrt(0)) / 2 * a);
+        System.out.println((-b + sqrt(0)) / (2 * a));
     }
 
     public static int discriminant(int a, int b, int c) {
